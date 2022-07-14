@@ -13,8 +13,8 @@
 
 theme: jekyll-agency
 
-url    : "muehan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-#baseurl: "" # the subpath of your site, e.g. /blog
+url    : "https://muehan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "hb-kriens" # the subpath of your site, e.g. /blog
 
 title      : HB-Kriens
 email      : your-email@example.com #this is also the email contact forms will go to
