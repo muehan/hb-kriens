@@ -16,10 +16,10 @@ jobs:
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
         restore-keys: |
           ${{ runner.os }}-gems-
+    - name: work around permission issue
+      run: git config --global --add safe.directory /github/workspace
 
     # Standard usage
     - uses:  helaili/jekyll-action@v2
-    - name: work around permission issue
-      run: git config --global --add safe.directory /github/workspace
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.TOKEN }}
